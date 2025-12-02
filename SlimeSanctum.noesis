@@ -1,0 +1,4 @@
+<Project>
+  <Assembly>SlimeSanctum</Assembly>
+  <DefaultDataNamespace>SlimeSanctum</DefaultDataNamespace>
+</Project>
