@@ -5,8 +5,67 @@
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   mc:Ignorable="d"
   d:DesignWidth="1920"
-  d:DesignHeight="1080"
-  Background="#FF4D5052">
+  d:DesignHeight="1080">
   <Grid>
+    <Image x:Name="WinIcon" VerticalAlignment="Top" HorizontalAlignment="Center" Width="64" Height="64" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Trophy.png">
+      <Image.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="50"/>
+        </TransformGroup>
+      </Image.RenderTransform>
+    </Image>
+    <TextBlock x:Name="WinQuantity" TextWrapping="Wrap" Text="{Binding Path=BestWaves}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="50" TextAlignment="Center" FontFamily="Bauhaus 93" FontSize="25" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="10"/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
+    <Image x:Name="CoinIcon" Width="48" Height="48" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Golds.png">
+      <Image.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform X="200"/>
+        </TransformGroup>
+      </Image.RenderTransform>
+    </Image>
+    <TextBlock x:Name="CoinQuantity" TextWrapping="Wrap" Text="{Binding Path=Coins}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Cascadia Code" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="12" X="315"/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
+    <Image x:Name="GemIcon" Width="48" Height="48" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Gem03_Diamond_Green.png">
+      <Image.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform X="400"/>
+        </TransformGroup>
+      </Image.RenderTransform>
+    </Image>
+    <TextBlock x:Name="GemQuantity" TextWrapping="Wrap" Text="{Binding Path=Gems}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Cascadia Code" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="12" X="515"/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
   </Grid>
 </Page>
