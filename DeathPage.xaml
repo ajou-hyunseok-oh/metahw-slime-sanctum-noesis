@@ -1,0 +1,90 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080" Width="1920" Height="1080" Background="#80000000">
+  <Grid Width="1920" Height="1080">
+    <Image x:Name="DeadIcon" Source="Sprites/Pictoicon_Coin_Skull.Png" Width="250" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+      <Image.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="-200"/>
+        </TransformGroup>
+      </Image.RenderTransform>
+    </Image>
+    <TextBlock x:Name="DeathMessage" TextWrapping="Wrap" Text="The sanctum falls, crushed by the slimes." Height="100" TextAlignment="Center" FontSize="38" FontFamily="Cooper" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Button x:Name="GoResultButton" Content="Button" Width="300" Height="108" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource ControlTemplate_GoResult}" Padding="0,0,0,0" Command="{Binding Path=events.goResult}">
+      <Button.Resources>
+        <ResourceDictionary>
+          <ControlTemplate x:Key="ControlTemplate_GoResult" TargetType="Button">
+            <Border x:Name="BackgroundBorder" Padding="{TemplateBinding Padding}" CornerRadius="2,2,2,2">
+              <Grid x:Name="Button_Content">
+                <Grid x:Name="Default">
+                  <Image x:Name="img_Button" Source="Sprites/ButtonFrame.png"/>
+                  <TextBlock x:Name="text_Label" TextWrapping="Wrap" Text="Result" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF004999" StrokeThickness="10">
+                    <TextBlock.RenderTransform>
+                      <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="31"/>
+                      </TransformGroup>
+                    </TextBlock.RenderTransform>
+                  </TextBlock>
+                </Grid>
+                <Grid x:Name="Hover" Opacity="0">
+                  <Image x:Name="img_Button_001" Source="Sprites/ButtonFrame.png" BlendingMode="Screen"/>
+                  <TextBlock x:Name="text_Label_001" TextWrapping="Wrap" Text="Result" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF4386DD" StrokeThickness="10">
+                    <TextBlock.RenderTransform>
+                      <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="31"/>
+                      </TransformGroup>
+                    </TextBlock.RenderTransform>
+                  </TextBlock>
+                </Grid>
+                <Grid x:Name="Pressed" Opacity="0">
+                  <Image x:Name="img_Button_002" Source="Sprites/ButtonFrame.png" BlendingMode="Multiply"/>
+                  <TextBlock x:Name="text_Label_002" TextWrapping="Wrap" Text="Result" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF012955" StrokeThickness="10">
+                    <TextBlock.RenderTransform>
+                      <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="31"/>
+                      </TransformGroup>
+                    </TextBlock.RenderTransform>
+                  </TextBlock>
+                </Grid>
+              </Grid>
+            </Border>
+
+            <ControlTemplate.Triggers>
+              <Trigger Value="True" Property="IsMouseOver">
+                <Setter TargetName="BackgroundBorder" Property="Background" Value="#FF778899"/>
+              </Trigger>
+              <Trigger Value="True" Property="IsPressed">
+                <Setter TargetName="BackgroundBorder" Property="Background" Value="#FF708090"/>
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </ResourceDictionary>
+      </Button.Resources>
+      <Button.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="200"/>
+        </TransformGroup>
+      </Button.RenderTransform>
+    </Button>
+  </Grid>
+</Page>
