@@ -7,7 +7,7 @@
   d:DesignWidth="1920"
   d:DesignHeight="1080" xmlns:noesis="clr-namespace:NoesisGUIExtensions">
   <Grid>
-    <ProgressBar x:Name="HPProgressBar" HorizontalAlignment="Center" VerticalAlignment="Top" Width="600" Height="40" RenderTransformOrigin="0.5,0.5" Value="{Binding Path=CurrentHP}" Minimum="{Binding Path=MinHP}" Maximum="{Binding Path=MaxHP}" Template="{DynamicResource Progress_Bar_1_Template}" Background="{x:Null}" Foreground="{x:Null}">
+    <ProgressBar x:Name="HPProgressBar" HorizontalAlignment="Center" VerticalAlignment="Top" Width="600" Height="40" RenderTransformOrigin="0.5,0.5" Value="{Binding Path=CurrentHP}" Maximum="{Binding Path=MaxHP}" Template="{DynamicResource Progress_Bar_1_Template}" Background="{x:Null}" Foreground="{x:Null}">
       <ProgressBar.Resources>
         <ResourceDictionary>
           <ControlTemplate x:Key="Progress_Bar_1_Template" TargetType="ProgressBar">
@@ -35,7 +35,7 @@
         </TransformGroup>
       </ProgressBar.RenderTransform>
     </ProgressBar>
-    <TextBlock x:Name="HPText" TextWrapping="Wrap" Text="{Binding Path=HPText}" Width="600" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" FontSize="25" FontFamily="Cascadia Code" FontStyle="Italic" LineHeight="0">
+    <TextBlock x:Name="HPText" TextWrapping="Wrap" Text="{Binding Path=HPText}" Width="600" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" FontSize="25" FontFamily="Tahoma" FontStyle="Italic" LineHeight="0">
       <TextBlock.Effect>
         <DropShadowEffect Opacity="0.699"/>
       </TextBlock.Effect>
@@ -68,7 +68,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="MeleeLevel" TextWrapping="Wrap" Text="{Binding Path=MeleeLevel}" Width="100" Height="64" FontFamily="Showcard Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="MeleeLevel" TextWrapping="Wrap" Text="{Binding Path=MeleeLevel}" Width="100" Height="64" FontFamily="Franklin Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -88,7 +88,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="RangedLevel" TextWrapping="Wrap" Text="{Binding Path=RangedLevel}" Width="100" Height="64" FontFamily="Showcard Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="RangedLevel" TextWrapping="Wrap" Text="{Binding Path=RangedLevel}" Width="100" Height="64" FontFamily="Franklin Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -108,7 +108,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="MagicLevel" TextWrapping="Wrap" Text="{Binding Path=MagicLevel}" Width="100" Height="64" FontFamily="Showcard Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="MagicLevel" TextWrapping="Wrap" Text="{Binding Path=MagicLevel}" Width="100" Height="64" FontFamily="Franklin Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -128,7 +128,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="DefenceLevel" TextWrapping="Wrap" Text="{Binding Path=DefenceLevel}" Width="100" Height="64" FontFamily="Showcard Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="DefenceLevel" TextWrapping="Wrap" Text="{Binding Path=DefenceLevel}" Width="100" Height="64" FontFamily="Franklin Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -138,43 +138,5 @@
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <Button x:Name="FireSkill" Width="128" Height="128" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource ControlTemplate.FireSkill}" Background="{x:Null}" BorderBrush="{x:Null}" Content="{Binding Path=event.FireSkill}" Foreground="{x:Null}">
-      <Button.Resources>
-        <ResourceDictionary>
-          <ControlTemplate x:Key="ControlTemplate.FireSkill" TargetType="Button">
-            <Border x:Name="BackgroundBorder" Padding="{TemplateBinding Padding}" CornerRadius="2,2,2,2">
-              <Grid x:Name="Button_Content">
-                <Grid x:Name="Default">
-                  <Image x:Name="img_Button" Source="Sprites/Icon_BoxingGloves.png" Stretch="Fill"/>
-                </Grid>
-                <Grid x:Name="Hover" Opacity="0">
-                  <Image x:Name="img_Button_001" Source="Sprites/Icon_BoxingGloves.png" BlendingMode="Screen"/>
-                </Grid>
-                <Grid x:Name="Pressed" Opacity="0">
-                  <Image x:Name="img_Button_002" Source="Sprites/Icon_BoxingGloves.png" Stretch="Fill" BlendingMode="Multiply"/>
-                </Grid>
-              </Grid>
-            </Border>
-
-            <ControlTemplate.Triggers>
-              <Trigger Value="True" Property="IsMouseOver">
-                <Setter TargetName="BackgroundBorder" Property="Background" Value="#FF778899"/>
-              </Trigger>
-              <Trigger Value="True" Property="IsPressed">
-                <Setter TargetName="BackgroundBorder" Property="Background" Value="#FF708090"/>
-              </Trigger>
-            </ControlTemplate.Triggers>
-          </ControlTemplate>
-        </ResourceDictionary>
-      </Button.Resources>
-      <Button.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform/>
-          <SkewTransform/>
-          <RotateTransform/>
-          <TranslateTransform Y="-300" X="-50"/>
-        </TransformGroup>
-      </Button.RenderTransform>
-    </Button>
   </Grid>
 </Page>

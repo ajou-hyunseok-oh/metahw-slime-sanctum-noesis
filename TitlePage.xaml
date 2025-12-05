@@ -8,7 +8,6 @@
     <ImageBrush ImageSource="Sprites/Background_06.png"/>
   </Page.Background>
   <Grid Background="#FF000000">
-    <Image Source="Sprites/bg.jpg" HorizontalAlignment="Center"/>
-    <Image Source="Sprites/Image_TitleLogo.png" Height="221" Width="491" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,187"/>
+    <Image Source="Sprites/Title.jpg" HorizontalAlignment="Center"/>
   </Grid>
 </Page>

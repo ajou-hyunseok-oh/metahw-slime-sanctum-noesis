@@ -10,7 +10,7 @@
     <ImageBrush ImageSource="Sprites/Background_06.png"/>
   </Page.Background>
   <Grid Background="#C0000000">
-    <TextBlock x:Name="Titke" TextWrapping="Wrap" Text="Level Up" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Height="125" TextAlignment="Center" FontSize="75" RenderTransformOrigin="0.5,0.5" FontFamily="Gill Sans">
+    <TextBlock x:Name="Titke" TextWrapping="Wrap" Text="Level Up" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Height="125" TextAlignment="Center" FontSize="75" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic">
       <TextBlock.Effect>
         <DropShadowEffect/>
       </TextBlock.Effect>
@@ -44,7 +44,10 @@
             </TransformGroup>
           </Image.RenderTransform>
         </Image>
-        <TextBlock x:Name="Skill0Title" TextWrapping="Wrap" Text="Melee Lv1" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Gill Sans" FontSize="40" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="Skill0Title" TextWrapping="Wrap" Text="Melee Lv1" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Franklin Gothic" FontSize="40" RenderTransformOrigin="0.5,0.5">
+          <TextBlock.Effect>
+            <DropShadowEffect/>
+          </TextBlock.Effect>
           <TextBlock.RenderTransform>
             <TransformGroup>
               <ScaleTransform/>
@@ -54,7 +57,7 @@
             </TransformGroup>
           </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="Instruction" TextWrapping="Wrap" Text="Melee Attack Level + 1" Width="360" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontSize="25" FontFamily="Expo M" TextAlignment="Center">
+        <TextBlock x:Name="Instruction" TextWrapping="Wrap" Text="Melee Attack Level + 1" Width="360" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontSize="25" FontFamily="Tahoma" TextAlignment="Center">
           <TextBlock.RenderTransform>
             <TransformGroup>
               <ScaleTransform/>
@@ -64,7 +67,7 @@
             </TransformGroup>
           </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="Upgrade" TextWrapping="Wrap" Text="UPGRADE" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Gill Sans" FontSize="35" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="Upgrade" TextWrapping="Wrap" Text="UPGRADE" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Franklin Gothic" FontSize="35" RenderTransformOrigin="0.5,0.5">
           <TextBlock.Effect>
             <DropShadowEffect/>
           </TextBlock.Effect>
@@ -100,7 +103,10 @@
             </TransformGroup>
           </Image.RenderTransform>
         </Image>
-        <TextBlock x:Name="Skill0Title001" TextWrapping="Wrap" Text="Range Lv1" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Gill Sans" FontSize="40" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="Skill0Title001" TextWrapping="Wrap" Text="Range Lv1" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Franklin Gothic" FontSize="40" RenderTransformOrigin="0.5,0.5">
+          <TextBlock.Effect>
+            <DropShadowEffect/>
+          </TextBlock.Effect>
           <TextBlock.RenderTransform>
             <TransformGroup>
               <ScaleTransform/>
@@ -110,7 +116,7 @@
             </TransformGroup>
           </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="Instruction001" TextWrapping="Wrap" Text="Range Attack Level + 1" Width="360" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontSize="25" FontFamily="Expo M" TextAlignment="Center">
+        <TextBlock x:Name="Instruction001" TextWrapping="Wrap" Text="Range Attack Level + 1" Width="360" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontSize="25" FontFamily="Tahoma" TextAlignment="Center">
           <TextBlock.RenderTransform>
             <TransformGroup>
               <ScaleTransform/>
@@ -120,7 +126,7 @@
             </TransformGroup>
           </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="Upgrade001" TextWrapping="Wrap" Text="UPGRADE" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Gill Sans" FontSize="35" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="Upgrade001" TextWrapping="Wrap" Text="UPGRADE" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Franklin Gothic" FontSize="35" RenderTransformOrigin="0.5,0.5">
           <TextBlock.Effect>
             <DropShadowEffect/>
           </TextBlock.Effect>
@@ -156,7 +162,10 @@
             </TransformGroup>
           </Image.RenderTransform>
         </Image>
-        <TextBlock x:Name="Skill0Title002" TextWrapping="Wrap" Text="Magic Lv1" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Gill Sans" FontSize="40" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="Skill0Title002" TextWrapping="Wrap" Text="Magic Lv1" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Franklin Gothic" FontSize="40" RenderTransformOrigin="0.5,0.5">
+          <TextBlock.Effect>
+            <DropShadowEffect/>
+          </TextBlock.Effect>
           <TextBlock.RenderTransform>
             <TransformGroup>
               <ScaleTransform/>
@@ -166,7 +175,7 @@
             </TransformGroup>
           </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="Instruction002" TextWrapping="Wrap" Text="Magic Attack Level + 1" Width="360" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontSize="25" FontFamily="Expo M" TextAlignment="Center">
+        <TextBlock x:Name="Instruction002" TextWrapping="Wrap" Text="Magic Attack Level + 1" Width="360" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontSize="25" FontFamily="Tahoma" TextAlignment="Center">
           <TextBlock.RenderTransform>
             <TransformGroup>
               <ScaleTransform/>
@@ -176,7 +185,7 @@
             </TransformGroup>
           </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="Upgrade002" TextWrapping="Wrap" Text="UPGRADE" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Gill Sans" FontSize="35" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="Upgrade002" TextWrapping="Wrap" Text="UPGRADE" Width="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" FontFamily="Franklin Gothic" FontSize="35" RenderTransformOrigin="0.5,0.5">
           <TextBlock.Effect>
             <DropShadowEffect/>
           </TextBlock.Effect>

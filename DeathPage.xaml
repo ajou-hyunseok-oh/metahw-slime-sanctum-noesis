@@ -17,7 +17,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="DeathMessage" TextWrapping="Wrap" Text="The sanctum falls, crushed by the slimes." Height="100" TextAlignment="Center" FontSize="38" FontFamily="Cooper" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <TextBlock x:Name="DeathMessage" TextWrapping="Wrap" Text="The sanctum falls, crushed by the slimes." Height="100" TextAlignment="Center" FontSize="38" FontFamily="Tahoma" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     <Button x:Name="GoResultButton" Content="Button" Width="300" Height="108" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource ControlTemplate_GoResult}" Padding="0,0,0,0" Command="{Binding Path=events.goResult}">
       <Button.Resources>
         <ResourceDictionary>

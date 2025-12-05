@@ -17,7 +17,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="WaveMessage" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" FontFamily="Cooper" FontSize="40" noesis:RichText.Text="You have repelled 999 slime invasions." Text="{Binding Path=WaveMessage}">
+    <TextBlock x:Name="WaveMessage" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" FontFamily="Tahoma" FontSize="40" noesis:RichText.Text="You have repelled 999 slime invasions." Text="{Binding Path=WaveMessage}">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -27,7 +27,7 @@
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <TextBlock x:Name="WaveQuantity" TextWrapping="Wrap" Text="{Binding Path=WaveQuantity}" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" FontFamily="Cooper" FontSize="75" noesis:RichText.Text="99">
+    <TextBlock x:Name="WaveQuantity" TextWrapping="Wrap" Text="{Binding Path=WaveQuantity}" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" FontFamily="Franklin Gothic" FontSize="75" noesis:RichText.Text="99">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -47,7 +47,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="SlimeQuantity" TextWrapping="Wrap" Text="{Binding Path=SlimeQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Cooper" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Kills">
+    <TextBlock x:Name="SlimeQuantity" TextWrapping="Wrap" Text="{Binding Path=SlimeQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Kills">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -67,7 +67,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="CoinQuantity" TextWrapping="Wrap" Text="{Binding Path=CoinQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Cooper" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Coins">
+    <TextBlock x:Name="CoinQuantity" TextWrapping="Wrap" Text="{Binding Path=CoinQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Coins">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -87,7 +87,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="GemQuantity" TextWrapping="Wrap" Text="{Binding Path=GemQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Cooper" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Gems">
+    <TextBlock x:Name="GemQuantity" TextWrapping="Wrap" Text="{Binding Path=GemQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Gems">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>

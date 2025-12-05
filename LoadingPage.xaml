@@ -1,0 +1,49 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080" Background="#FF000000" xmlns:noesis="clr-namespace:NoesisGUIExtensions">
+  <Grid>
+    <Image Source="Sprites/Loading.jpg"/>
+    <ProgressBar x:Name="LoadingProgressValue" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="1200" Height="64" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource ControlTemplate.Loading}" Value="{Binding Path=LoadingProgressValue}">
+      <ProgressBar.Resources>
+        <ResourceDictionary>
+          <ControlTemplate x:Key="ControlTemplate.Loading" TargetType="ProgressBar">
+            <Grid>
+              <Border x:Name="PART_Track" Background="#FF0C1F54"/>
+              <Border x:Name="PART_Indicator" HorizontalAlignment="Left">
+                <Border.Background>
+                  <ImageBrush ImageSource="Sprites/LoadingBar.png"/>
+                </Border.Background>
+              </Border>
+            </Grid>
+          </ControlTemplate>
+        </ResourceDictionary>
+      </ProgressBar.Resources>
+      <ProgressBar.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="-30"/>
+        </TransformGroup>
+      </ProgressBar.RenderTransform>
+    </ProgressBar>
+    <TextBlock x:Name="LoadingProgressText" TextWrapping="Wrap" Text="{Binding Path=LoadingProgressText}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1200" Height="70" TextAlignment="Center" FontFamily="Tahoma" FontSize="30" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="-10"/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+      <TextBlock.Effect>
+        <DropShadowEffect/>
+      </TextBlock.Effect>
+    </TextBlock>
+  </Grid>
+</Page>

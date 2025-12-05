@@ -17,7 +17,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="WinQuantity" TextWrapping="Wrap" Text="{Binding Path=BestWaves}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="50" TextAlignment="Center" FontFamily="Bauhaus 93" FontSize="25" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="WinQuantity" TextWrapping="Wrap" Text="{Binding Path=BestWaves}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="50" TextAlignment="Center" FontFamily="Franklin Gothic" FontSize="25" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -37,7 +37,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="CoinQuantity" TextWrapping="Wrap" Text="{Binding Path=Coins}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Cascadia Code" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="CoinQuantity" TextWrapping="Wrap" Text="{Binding Path=Coins}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Franklin Gothic" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -57,7 +57,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="GemQuantity" TextWrapping="Wrap" Text="{Binding Path=Gems}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Cascadia Code" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="GemQuantity" TextWrapping="Wrap" Text="{Binding Path=Gems}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Franklin Gothic" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
