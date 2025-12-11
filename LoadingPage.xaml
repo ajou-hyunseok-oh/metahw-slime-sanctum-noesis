@@ -28,17 +28,17 @@
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform Y="-30"/>
+          <TranslateTransform/>
         </TransformGroup>
       </ProgressBar.RenderTransform>
     </ProgressBar>
-    <TextBlock x:Name="LoadingProgressText" TextWrapping="Wrap" Text="{Binding Path=LoadingProgressText}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1200" Height="70" TextAlignment="Center" FontFamily="Tahoma" FontSize="30" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="LoadingProgressText" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1200" Height="70" TextAlignment="Center" FontFamily="Tahoma" FontSize="30" RenderTransformOrigin="0.5,0.5" Text="{Binding Path=LoadingProgressText}" Stroke="#80000000" StrokeThickness="2">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform Y="-10"/>
+          <TranslateTransform Y="15"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
       <TextBlock.Effect>

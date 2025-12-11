@@ -10,7 +10,7 @@
     <ImageBrush ImageSource="Sprites/Background_06.png"/>
   </Page.Background>
   <Grid Background="#C0000000">
-    <TextBlock x:Name="Titke" TextWrapping="Wrap" Text="Level Up" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Height="125" TextAlignment="Center" FontSize="75" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic">
+    <TextBlock x:Name="Titke" TextWrapping="Wrap" Text="Level Up" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Height="125" TextAlignment="Center" FontSize="75" RenderTransformOrigin="0.5,0.5" FontFamily="Impact">
       <TextBlock.Effect>
         <DropShadowEffect/>
       </TextBlock.Effect>

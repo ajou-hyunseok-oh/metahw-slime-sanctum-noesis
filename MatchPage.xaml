@@ -35,9 +35,9 @@
         </TransformGroup>
       </ProgressBar.RenderTransform>
     </ProgressBar>
-    <TextBlock x:Name="HPText" TextWrapping="Wrap" Text="{Binding Path=HPText}" Width="600" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" FontSize="25" FontFamily="Tahoma" FontStyle="Italic" LineHeight="0">
+    <TextBlock x:Name="HPText" TextWrapping="WrapWithOverflow" Width="600" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" FontSize="20" FontFamily="Tahoma" FontStyle="Italic" LineHeight="0" Text="{Binding Path=HPText}" StrokeThickness="2" Stroke="#80000000">
       <TextBlock.Effect>
-        <DropShadowEffect Opacity="0.699"/>
+        <DropShadowEffect/>
       </TextBlock.Effect>
       <TextBlock.RenderTransform>
         <TransformGroup>
@@ -54,89 +54,153 @@
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform Y="11" X="-340"/>
+          <TranslateTransform Y="12" X="-410"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <Image x:Name="MeleeIcon" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Sword.png">
-      <Image.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform/>
-          <SkewTransform/>
-          <RotateTransform/>
-          <TranslateTransform X="24" Y="250"/>
-        </TransformGroup>
-      </Image.RenderTransform>
-    </Image>
-    <TextBlock x:Name="MeleeLevel" TextWrapping="Wrap" Text="{Binding Path=MeleeLevel}" Width="100" Height="64" FontFamily="Franklin Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="HPLevel" TextWrapping="Wrap" Text="{Binding Path=HPLevel}" Width="100" Height="64" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontSize="25" FontFamily="Impact">
+      <TextBlock.Effect>
+        <DropShadowEffect/>
+      </TextBlock.Effect>
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="100" Y="260"/>
+          <TranslateTransform Y="20" X="-330"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <Image x:Name="RangedIcon" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Target.png">
+    <Image x:Name="MeleeIcon" Width="32" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Sword.png">
       <Image.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="24" Y="350"/>
+          <TranslateTransform X="40" Y="180"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="RangedLevel" TextWrapping="Wrap" Text="{Binding Path=RangedLevel}" Width="100" Height="64" FontFamily="Franklin Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="MeleeLevel" TextWrapping="Wrap" Text="{Binding Path=MeleeLevel}" Width="100" Height="64" FontFamily="Impact" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.Effect>
+        <DropShadowEffect/>
+      </TextBlock.Effect>
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="100" Y="360"/>
+          <TranslateTransform X="80" Y="180"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <Image x:Name="MagicIcon" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Pumkin.png">
+    <Image x:Name="RangedIcon" Width="32" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Target.png">
       <Image.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="24" Y="450"/>
+          <TranslateTransform X="40" Y="230"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="MagicLevel" TextWrapping="Wrap" Text="{Binding Path=MagicLevel}" Width="100" Height="64" FontFamily="Franklin Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="RangedLevel" TextWrapping="Wrap" Text="{Binding Path=RangedLevel}" Width="100" Height="64" FontFamily="Impact" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.Effect>
+        <DropShadowEffect/>
+      </TextBlock.Effect>
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="100" Y="460"/>
+          <TranslateTransform X="80" Y="230"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <Image x:Name="DefenceIcon" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Shield.png">
+    <Image x:Name="MagicIcon" Width="32" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Pumkin.png">
       <Image.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="24" Y="550"/>
+          <TranslateTransform X="40" Y="280"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="DefenceLevel" TextWrapping="Wrap" Text="{Binding Path=DefenceLevel}" Width="100" Height="64" FontFamily="Franklin Gothic" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="MagicLevel" TextWrapping="Wrap" Text="{Binding Path=MagicLevel}" Width="100" Height="64" FontFamily="Impact" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.Effect>
+        <DropShadowEffect/>
+      </TextBlock.Effect>
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="100" Y="560"/>
+          <TranslateTransform X="80" Y="280"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
+    <Image x:Name="DefenceIcon" Width="48" Height="48" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Shield.png">
+      <Image.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="12" X="350"/>
+        </TransformGroup>
+      </Image.RenderTransform>
+    </Image>
+    <TextBlock x:Name="DefenceLevel" Text="{Binding Path=DefenceLevel}" Width="100" Height="64" FontFamily="Impact" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.Effect>
+        <DropShadowEffect/>
+      </TextBlock.Effect>
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="20" X="430"/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
+    <TextBlock x:Name="WaveCount" TextWrapping="Wrap" Text="{Binding Path=WaveCount}" Width="800" Height="240" TextAlignment="Center" FontSize="150" FontFamily="Anton"/>
+    <Button x:Name="Exit" HorizontalAlignment="Right" VerticalAlignment="Top" Width="64" Height="64" FontSize="1" FontFamily="Arial" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Background="{x:Null}" Template="{DynamicResource ControlTemplate.Exit}" Command="{Binding Path=events.exit}">
+      <Button.Resources>
+        <ResourceDictionary>
+          <ControlTemplate x:Key="ControlTemplate.Exit" TargetType="Button">
+            <Border x:Name="BackgroundBorder" CornerRadius="2,2,2,2">
+              <Grid x:Name="Button_Content">
+                <Grid x:Name="Default">
+                  <Image Source="Sprites/Pictoicon_Quit.Png"/>
+                </Grid>
+                <Grid x:Name="Hover">
+                  <Image Source="Sprites/Pictoicon_Quit.Png" BlendingMode="Screen"/>
+                </Grid>
+                <Grid x:Name="Pressed">
+                  <Image Source="Sprites/Pictoicon_Quit.Png" BlendingMode="Multiply"/>
+                </Grid>
+              </Grid>
+            </Border>
+
+            <ControlTemplate.Triggers>
+              <Trigger Value="True" Property="IsMouseOver">
+                <Setter TargetName="BackgroundBorder" Property="Background" Value="#FF778899"/>
+              </Trigger>
+              <Trigger Value="True" Property="IsPressed">
+                <Setter TargetName="BackgroundBorder" Property="Background" Value="#FF708090"/>
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </ResourceDictionary>
+      </Button.Resources>
+      <Button.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform X="-50" Y="150"/>
+        </TransformGroup>
+      </Button.RenderTransform>
+    </Button>
   </Grid>
 </Page>

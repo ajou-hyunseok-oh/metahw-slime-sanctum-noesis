@@ -17,7 +17,7 @@
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="WinQuantity" TextWrapping="Wrap" Text="{Binding Path=BestWaves}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="50" TextAlignment="Center" FontFamily="Franklin Gothic" FontSize="25" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="WinQuantity" TextWrapping="Wrap" Text="{Binding Path=BestWaves}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="50" TextAlignment="Center" FontFamily="Impact" FontSize="25" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -33,17 +33,17 @@
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="200"/>
+          <TranslateTransform X="200" Y="10"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="CoinQuantity" TextWrapping="Wrap" Text="{Binding Path=Coins}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Franklin Gothic" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="CoinQuantity" TextWrapping="Wrap" Text="{Binding Path=Coins}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Impact" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform Y="12" X="315"/>
+          <TranslateTransform Y="22" X="315"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
@@ -53,17 +53,17 @@
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="400"/>
+          <TranslateTransform X="400" Y="10"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="GemQuantity" TextWrapping="Wrap" Text="{Binding Path=Gems}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Franklin Gothic" RenderTransformOrigin="0.5,0.5">
+    <TextBlock x:Name="GemQuantity" TextWrapping="Wrap" Text="{Binding Path=Gems}" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontFamily="Impact" RenderTransformOrigin="0.5,0.5">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform Y="12" X="515"/>
+          <TranslateTransform Y="22" X="515"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>

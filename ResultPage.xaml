@@ -7,17 +7,7 @@
   d:DesignWidth="1920"
   d:DesignHeight="1080" xmlns:noesis="clr-namespace:NoesisGUIExtensions" Background="#C0000000">
   <Grid>
-    <Image x:Name="WaveIcon" Source="Sprites/Icon_Trophy.png" Width="125" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" HorizontalAlignment="Center">
-      <Image.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform/>
-          <SkewTransform/>
-          <RotateTransform/>
-          <TranslateTransform Y="275"/>
-        </TransformGroup>
-      </Image.RenderTransform>
-    </Image>
-    <TextBlock x:Name="WaveMessage" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" FontFamily="Tahoma" FontSize="40" noesis:RichText.Text="You have repelled 999 slime invasions." Text="{Binding Path=WaveMessage}">
+    <TextBlock x:Name="WaveMessage" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" FontFamily="Tahoma" FontSize="30" Margin="0,-11,0,0" FontWeight="Bold" Text="{Binding Path=WaveMessage}">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -27,77 +17,87 @@
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <TextBlock x:Name="WaveQuantity" TextWrapping="Wrap" Text="{Binding Path=WaveQuantity}" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" FontFamily="Franklin Gothic" FontSize="75" noesis:RichText.Text="99">
-      <TextBlock.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform/>
-          <SkewTransform/>
-          <RotateTransform/>
-          <TranslateTransform Y="175"/>
-        </TransformGroup>
-      </TextBlock.RenderTransform>
-    </TextBlock>
-    <Image x:Name="SlimeIcon" Height="100" Width="100" Source="Sprites/SlimeIcon.png" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <Image x:Name="WaveIcon" Source="Sprites/Icon_Trophy.png" Width="70" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,-118,399,0" Height="70">
       <Image.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="-150" Y="400"/>
+          <TranslateTransform Y="300"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="SlimeQuantity" TextWrapping="Wrap" Text="{Binding Path=SlimeQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Kills">
+    <TextBlock x:Name="WaveCount" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" FontFamily="Tahoma" FontSize="25" Margin="0,4,180,0" Text="{Binding Path=WaveCount}">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="75" Y="425"/>
+          <TranslateTransform Y="200"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <Image x:Name="CoinIcon" Width="80" Height="80" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Golds.png">
+    <Image x:Name="SlimeIcon" Height="80" Width="80" Source="Sprites/SlimeIcon.png" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="408,-232,0,0">
       <Image.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="-150" Y="510"/>
+          <TranslateTransform X="-150" Y="410"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="CoinQuantity" TextWrapping="Wrap" Text="{Binding Path=CoinQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Coins">
+    <TextBlock x:Name="KilledSlimes" TextWrapping="Wrap" Height="100" Width="120" RenderTransformOrigin="0.5,0.5" FontFamily="Tahoma" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="338,-148,0,0" Text="{Binding Path=KilledSlimes}">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="75" Y="525"/>
+          <TranslateTransform Y="350"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <Image x:Name="GemIcon" Width="80" Height="80" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Gem03_Diamond_Green.png">
+    <Image x:Name="CoinIcon" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Golds.png">
       <Image.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="-150" Y="610"/>
+          <TranslateTransform Y="270" X="-200"/>
         </TransformGroup>
       </Image.RenderTransform>
     </Image>
-    <TextBlock x:Name="GemQuantity" TextWrapping="Wrap" Text="{Binding Path=GemQuantity}" Height="100" Width="300" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Center" noesis:RichText.Text="x 100 Gems">
+    <TextBlock x:Name="Coins" TextWrapping="Wrap" Height="100" Width="120" RenderTransformOrigin="0.5,0.5" FontFamily="Tahoma" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,-30,180,0" Text="{Binding Path=Coins}">
       <TextBlock.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform X="75" Y="625"/>
+          <TranslateTransform Y="310"/>
         </TransformGroup>
       </TextBlock.RenderTransform>
     </TextBlock>
-    <Button x:Name="GoLobbyButton" Width="300" Height="108" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource ControlTemplate_GoLobby}" Padding="0,0,0,0" Command="{Binding Path=events.goResult}" VerticalContentAlignment="Top">
+    <Image x:Name="GemIcon" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Source="Sprites/Icon_Gem03_Diamond_Green.png">
+      <Image.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="270" X="50"/>
+        </TransformGroup>
+      </Image.RenderTransform>
+    </Image>
+    <TextBlock x:Name="Gems" TextWrapping="Wrap" Height="100" Width="120" RenderTransformOrigin="0.5,0.5" FontFamily="Tahoma" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="338,-30,0,0" Text="{Binding Path=Gems}">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform Y="310"/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
+    <Button x:Name="GoLobbyButton" Width="300" Height="108" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource ControlTemplate_GoLobby}" Padding="0,0,0,0" Command="{Binding Path=events.goLobby}" VerticalContentAlignment="Top">
       <Button.Resources>
         <ResourceDictionary>
           <ControlTemplate x:Key="ControlTemplate_GoResult" TargetType="Button">
@@ -166,7 +166,7 @@
               <Grid x:Name="Button_Content">
                 <Grid x:Name="Default">
                   <Image x:Name="img_Button" Source="Sprites/ButtonFrame.png"/>
-                  <TextBlock x:Name="text_Label" TextWrapping="Wrap" Text="Return" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF004999" StrokeThickness="10">
+                  <TextBlock x:Name="text_Label" TextWrapping="Wrap" Text="Escape" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF004999" StrokeThickness="10">
                     <TextBlock.RenderTransform>
                       <TransformGroup>
                         <ScaleTransform/>
@@ -179,7 +179,7 @@
                 </Grid>
                 <Grid x:Name="Hover" Opacity="0">
                   <Image x:Name="img_Button_001" Source="Sprites/ButtonFrame.png" BlendingMode="Screen"/>
-                  <TextBlock x:Name="text_Label_001" TextWrapping="Wrap" Text="Return" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF4386DD" StrokeThickness="10">
+                  <TextBlock x:Name="text_Label_001" TextWrapping="Wrap" Text="Escape" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF4386DD" StrokeThickness="10">
                     <TextBlock.RenderTransform>
                       <TransformGroup>
                         <ScaleTransform/>
@@ -192,7 +192,7 @@
                 </Grid>
                 <Grid x:Name="Pressed" Opacity="0">
                   <Image x:Name="img_Button_002" Source="Sprites/ButtonFrame.png" BlendingMode="Multiply"/>
-                  <TextBlock x:Name="text_Label_002" TextWrapping="Wrap" Text="Return" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF012955" StrokeThickness="10">
+                  <TextBlock x:Name="text_Label_002" TextWrapping="Wrap" Text="Escape" TextAlignment="Center" FontFamily="Showcard Gothic" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="108" FontSize="35" RenderTransformOrigin="0.5,0.5" Stroke="#FF012955" StrokeThickness="10">
                     <TextBlock.RenderTransform>
                       <TransformGroup>
                         <ScaleTransform/>
@@ -213,7 +213,7 @@
           <ScaleTransform/>
           <SkewTransform/>
           <RotateTransform/>
-          <TranslateTransform Y="750"/>
+          <TranslateTransform Y="350"/>
         </TransformGroup>
       </Button.RenderTransform>
     </Button>
